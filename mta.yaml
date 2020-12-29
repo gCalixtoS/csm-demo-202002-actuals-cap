@@ -8,7 +8,7 @@ modules:
   path: gen/srv
   requires:
   - name: csm-demo-202002-actuals-cap-db
-  - name: DWC.CSMDEMO202002ACTUALS
+  - name: cross-container-service-1
   provides:
   - name: srv-api
     properties:
@@ -38,10 +38,6 @@ resources:
     service-plan: hdi-shared
   properties:
     hdi-service-name: ${service-name}
-- name: DWC.CSMDEMO202002ACTUALS
-  type: org.cloudfoundry.existing-service
-  parameters:
-    service-name: ups-dwc-space-csmdemo202002
 - name: cross-container-service-1
   type: org.cloudfoundry.existing-service
   parameters:

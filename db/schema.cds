@@ -14,3 +14,10 @@ Entity ![CONS_ACTUALS_HDI] {
         ![RECORDMODE]: String(5000)  @title: 'RECORDMODE' ; 
         ![UNIT]: String(3)  @title: 'UNIT' ;
 }
+
+@cds.persistence.exists 
+Entity ![GV_ENERGY_V3] {
+    key    ![EN_CONS_ACTUAL]: Decimal(17, 0)  @title: 'EN_CONS_ACTUAL' ; 
+    key     ![EN_PROD_ACTUAL]: Decimal(17, 0)  @title: 'EN_PROD_ACTUAL' ; 
+    key     ![EN_PROD_PLANNED]: Double  @title: 'EN_PROD_PLANNED' ; 
+}
