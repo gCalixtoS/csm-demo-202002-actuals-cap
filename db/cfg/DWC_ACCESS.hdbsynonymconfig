@@ -1,0 +1,8 @@
+{
+	"SGV_ENERGY_V3" : {
+    	"target": {
+    		"schema.configure": "UPS_DWC_SPACE_CSMDEMO202002/schema",
+    		"object": "GV_ENERGY_V3"
+    	}
+	}
+}
