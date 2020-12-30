@@ -5,5 +5,5 @@ service EN {
 }
 
 service V {
-    view GV_ENERGY_V3 as select from db.GV_ENERGY_V3;
+    view EN_CONS_X_PROD_ACTUALS as select from db.EN_CONS_X_PROD_ACTUALS;
 }

@@ -4,7 +4,7 @@
 		"object_privileges": [
 			{
 			  "type": "SYNONYM",
-			  "name": "SGV_ENERGY_V3",
+			  "name": "SEN_CONS_X_PROD_ACTUALS",
 			  "privileges": [
 			    "SELECT"
 			  ]
