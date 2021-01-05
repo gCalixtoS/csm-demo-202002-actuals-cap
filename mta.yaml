@@ -1,23 +1,23 @@
 _schema-version: "3.1"
-ID: csm-demo-202002-actuals-cap
+ID: jenkins-test-csm-demo-202002-actuals-cap
 description: A simple CAP project.
 version: 1.0.0
 modules:
-- name: csm-demo-202002-actuals-cap-srv
+- name: jenkins-test-csm-demo-202002-actuals-cap-srv
   type: nodejs
   path: gen/srv
   requires:
-  - name: csm-demo-202002-actuals-cap-db
+  - name: jenkins-test-csm-demo-202002-actuals-cap-db
   - name: cross-container-service-1
   provides:
   - name: srv-api
     properties:
       srv-url: ${default-url}
-- name: csm-demo-202002-actuals-cap-db-deployer
+- name: jenkins-test-csm-demo-202002-actuals-cap-db-deployer
   type: hdb
   path: gen/db
   requires:
-  - name: csm-demo-202002-actuals-cap-db
+  - name: jenkins-test-csm-demo-202002-actuals-cap-db
     properties:
       TARGET_CONTAINER: ~{hdi-service-name}
   - name: cross-container-service-1
@@ -28,7 +28,7 @@ modules:
   parameters:
     buildpack: nodejs_buildpack
 resources:
-- name: csm-demo-202002-actuals-cap-db
+- name: jenkins-test-csm-demo-202002-actuals-cap-db
   type: com.sap.xs.hdi-container
   parameters:
     config:
