@@ -15,7 +15,11 @@
  * Set pipelineVersion to a fixed released version (e.g. "v35") when running in a productive environment.
  * To find out about available versions and release notes, visit: https://github.com/SAP/cloud-s4-sdk-pipeline/releases
  */
-String pipelineVersion = "master"
+String pipelineVersion = "v28"
 
 library "s4sdk-pipeline-library@${pipelineVersion}"
 cloudSdkPipeline(script: this)
+
+stage('build') {
+    mtaBuild script: this
+}
