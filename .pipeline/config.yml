@@ -26,6 +26,15 @@ general:
 steps:
   mavenExecute:
     dockerImage: devxci/mbtci:1.0.14
+  mtaBuild:
+    buildTarget: 'CF'
+  cloudFoundryDeploy:
+    deployTool: 'mtaDeployPlugin'
+    deployType: 'standard'
+    cloudFoundry:
+      org: 'CF-ORG-CSM-E2E-DEMOS'
+      space: 'CSM-E2E-DEMOS-SPACE'
+      credentialsId: 'CF_CREDENTIALSID'
 
 
 ### Stage-specific configuration
